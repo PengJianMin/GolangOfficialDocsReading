@@ -8,3 +8,6 @@
 # 创建模块（module）
 + `go mod init ${module_name}` module_name是模块路径（module path）
 + 实际开发中，模块路径常常设置成源码存放的位置，例如 github.com/mymodule
+
+# 包（package）
++ 包是对函数的分组，它是由**一个目录下的所有文件组成**，即一个目录下**只能表示一个包**。
