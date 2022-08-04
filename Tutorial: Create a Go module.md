@@ -46,3 +46,14 @@
 # 返回对多人的问候[Return greetings for multiple people](https://golang.google.cn/doc/tutorial/greetings-multiple-people)
 1. 当需要变动函数参数时，会使得**函数签名（unction's signature）** 发生变化，如果是要公开发布的模块，最好建议重新起一个函数名，这样才能**向后兼容**（backward compatibility）。
 2. 空标识符 "\_" Go blank identifier可以忽略**不需要的返回值**
+# 添加测试[Add a test](https://golang.google.cn/doc/tutorial/add-a-test)
+1. Golang内置了单元测试（unit test）
+2. 测试工具
+    + 使用命名规范（naming convention）
+    + 使用`testing`包（testing package）
+    + 使用`go test`命令
+3. 测试步骤
+    + 创建测试文件
+        + 测试文件必须以**_test.go**结尾
+        + 该命名方式告诉`go test`命令这个文件包含**测试方法（test function）**
+    + 
