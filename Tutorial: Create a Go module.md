@@ -25,5 +25,7 @@
 2. 如果调用的是**未公开发布的模块**，或者是存放在**本地的模块**，则需要修改一些信息，让Go工具可以找到它（**只是找到，知道在哪**），需要用`go mod tidy`使得更改**生效**
     + `go mod edit -replace example.com/greetings = ../greetings`，go.mod文件中会多出一条**replace记录**
         + 将引入路径从 example.com/greetings 改成**本地路径`../greetings`**，**`../greetings`下面有greetings这个包** 
-    + 执行 `go mod tidy` 使得更改生效，go.mod文件中会多出一条**require记录**，此时依赖追踪才正式开始。
+    + 执行 `go mod tidy` 使得更改生效，go.mod文件中会多出一条**require记录**，此时**依赖追踪才正式开始**
         + require记录后边会有模块的**版本号**，确保引入正确的版本
+# 返回（Return）并处理错误（Handle error）[Return and handle an error](https://golang.google.cn/doc/tutorial/handle-errors)
+1. 
