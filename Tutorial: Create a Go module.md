@@ -38,4 +38,8 @@
     + `log.Fatal(err)`
 # 返回随机（random）问候[Return a random greeting](https://golang.google.cn/doc/tutorial/random-greeting)
 1. slice的类似数组，但它的**大小是动态**的
-2. 
+    + 声明slice时，不需要写明大小 `[]string`
+2. 调用`math/rand`包可以生成**随机数**，可以传入**随机种子seed** `rand.Seed(time.Now().UnixNano())`
+3. **init方法**：主要负责**初始化**工作
+    + 如果init方法和main方法在同一包中：**先于main方法**执行
+    + 如果init方法在第三方包中：在**导入时会执行**，再让main方法使用，同样**先于main方法**执行
