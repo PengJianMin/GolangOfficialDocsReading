@@ -6,4 +6,14 @@
 5. [Tutorial: Getting started with generics](https://golang.google.cn/doc/tutorial/generics.html) undone
 6. [Tutorial: Getting started with fuzzing](https://golang.google.cn/doc/tutorial/fuzz.html) undone
 7. [Writing Web Applications](https://golang.google.cn/doc/articles/wiki/) undone
-8. []
+8. [How to write Go code](https://golang.google.cn/doc/code.html) undone
+# Using and understanding Go
+1. [Effective Go](https://golang.google.cn/doc/effective_go.html)
+2. ...
+# Accessing databases
+# Developing modules
+# References
+# Codewalks
+# From the Go Blog
+# Wiki
+# Talks
