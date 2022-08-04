@@ -5,8 +5,8 @@
 4. [Tutorial: Developing a RESTful API with Go and Gin](https://golang.google.cn/doc/tutorial/web-service-gin.html) 
 5. [Tutorial: Getting started with generics](https://golang.google.cn/doc/tutorial/generics.html) 
 6. [Tutorial: Getting started with fuzzing](https://golang.google.cn/doc/tutorial/fuzz.html) 
-7. [Writing Web Applications](https://golang.google.cn/doc/articles/wiki/) undone
-8. [How to write Go code](https://golang.google.cn/doc/code.html) undone
+7. [Writing Web Applications](https://golang.google.cn/doc/articles/wiki/) 
+8. [How to write Go code](https://golang.google.cn/doc/code.html) 
 # Using and understanding Go
 1. [Effective Go](https://golang.google.cn/doc/effective_go.html)
 2. ...
