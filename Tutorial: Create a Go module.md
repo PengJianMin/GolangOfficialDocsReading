@@ -7,6 +7,7 @@
     + `mkdir greetings; cd greetings`
 2. 执行`go mod init`命令，为模块赋予一个**路径（Path）**，如果该模块之后要发布到网上，这个路径就是**代码仓库所在位置**
     + `go mod init example/greeetings`
+    + **为模块赋予一个路径，相当于在这个路径下有存在包**
     + go.mod文件内容包括：
         + 自身模块名
         + Go版本信息
