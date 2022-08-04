@@ -2,7 +2,8 @@
 + [Tutorial: Create a Go module](https://golang.google.cn/doc/tutorial/create-module)
 # **创建**模块[Tutorial: Create a Go module](https://golang.google.cn/doc/tutorial/create-module)
 + Go的代码通过**包（package）** 进行分组管理，包通过**模块（module）** 进行分组管理。
-+ 创建模块步骤
+    + 模块名等价于一个本地路径或网络路径，路径下有和模块名最后一个单词**同名**的包，方便大家下载调用。
++ **创建**模块步骤
 1. 创建目录并进入目录
     + `mkdir greetings; cd greetings`
 2. 执行`go mod init`命令，为模块赋予一个**路径（Path）**，如果该模块之后要发布到网上，这个路径就是**代码仓库所在位置**
