@@ -28,4 +28,10 @@
     + 执行 `go mod tidy` 使得更改生效，go.mod文件中会多出一条**require记录**，此时**依赖追踪才正式开始**
         + require记录后边会有模块的**版本号**，确保引入正确的版本
 # 返回（Return）并处理错误（Handle error）[Return and handle an error](https://golang.google.cn/doc/tutorial/handle-errors)
-1. 
+1. `errors.New`函数返回一个error对象
+    + `errors.New(info)`
+2. `log.Prefix`设置打印信息的前缀
+    + `log.Prefix("greetings:")`
+3. `log.Fatal`打印错误信息并且结束程序
+    + `log.Fatal(err)`
+# 返回随机（random）问候[Return a random greeting](https://golang.google.cn/doc/tutorial/random-greeting)
