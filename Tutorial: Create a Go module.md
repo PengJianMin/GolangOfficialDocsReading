@@ -25,3 +25,4 @@
 3. 如果调用的是**未公开发布的模块**，或者是存放在**本地的模块**，则需要修改一些信息，让**Go工具可以找到它**进行**编译工作**。
     + `go mod edit -replace example.com/greetings = ../greetings`
     + 将引入路径从 example.com/greetings 改成**本地路径`../greetings`**，**`../greetings`下面有greetings这个包** 
+    + 执行 `go mod tidy` 使得更改生效
