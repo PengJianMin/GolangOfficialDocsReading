@@ -43,3 +43,6 @@
 3. **init方法**：主要负责**初始化**工作
     + 如果init方法和main方法在同一包中：**先于main方法**执行
     + 如果init方法在第三方包中：在**导入时会执行**，再让main方法使用，同样**先于main方法**执行
+# 返回对多人的问候[Return greetings for multiple people](https://golang.google.cn/doc/tutorial/greetings-multiple-people)
+1. 当需要变动函数参数时，会使得**函数签名（unction's signature）** 发生变化，如果是要公开发布的模块，最好建议重新起一个函数名，这样才能**向后兼容**（backward compatibility）。
+2. 空标识符 "\_" Go blank identifier可以忽略**不需要的返回值**
