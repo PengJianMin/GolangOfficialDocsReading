@@ -64,3 +64,6 @@
     + `go test` 命令进行测试
         + 在该测试文件所在目录下执行
         + \-v 标识符可以获取更详细的信息 `go test -v`
+# 编译和安装应用[Compile and install the application](https://golang.google.cn/doc/tutorial/compile-install)
+1. `go build`：编译所有包（package）和依赖（dependencies），但**不执行安装**
+2. `go install`：编译并且安装包
