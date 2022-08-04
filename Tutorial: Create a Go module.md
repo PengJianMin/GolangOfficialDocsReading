@@ -15,4 +15,4 @@
     + 包名通常为**模块路径的结尾** 
       + `package greetings`
     + 在Golang中，函数名开头如果是**大写**，表明其实**可导出，即可被导入（import）**，可以在该函数所在包的**包外**进行调用，**类似public**
-+ **调用**模块[Call your code from another module](https://golang.google.cn/doc/tutorial/call-module-code)
+# **调用**模块[Call your code from another module](https://golang.google.cn/doc/tutorial/call-module-code)
