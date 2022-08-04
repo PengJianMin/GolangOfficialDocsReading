@@ -54,6 +54,13 @@
     + 使用`go test`命令
 3. 测试步骤
     + 创建测试文件
+        + 在需要测试的代码文件**相同路径**下创建测试文件
         + 测试文件必须以**_test.go**结尾
         + 该命名方式告诉`go test`命令这个文件包含**测试方法（test function）**
-    + 
+    + 编写测试方法（test function）
+        + 测试方法/函数必须**以Test开头**，参数必须为***testing.T**指针类型（testing为包）
+            + `func TestHelloName(t *testing.T){}` `func TestHelloEmpty(t *testing.T){}`
+        + `t.Fatalf()`可以将错误信息打印至**控制台（console）**，并中断程序
+    + `go test` 命令进行测试
+        + 在该测试文件所在目录下执行
+        + \-v 标识符可以获取更详细的信息 `go test -v`
