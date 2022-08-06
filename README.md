@@ -8,7 +8,7 @@
 7. [Writing Web Applications](https://golang.google.cn/doc/articles/wiki/) 
 8. [How to write Go code](https://golang.google.cn/doc/code.html) 
 # Using and understanding Go
-1. [Effective Go](https://golang.google.cn/doc/effective_go.html)
+1. [Effective Go](https://github.com/PengJianMin/GolangOfficialDocsReading/blob/main/Effective%20Go.md)
 2. ...
 # Accessing databases
 ...
