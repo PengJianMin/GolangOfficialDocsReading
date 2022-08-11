@@ -34,8 +34,14 @@ var albums = []album{
 ```
 + **结构体标签struct tags**可以使得结构体在**序列化**成JSON时，每个**属性**应该对应的**JSON字段**的名称，使**值**可以赋到**对应的字段**上
 # 编写处理器，返回所有album类目（Write a handler to return all items）
-1. `/albums`的`GET请求`处理器
-2. 代码编写顺序
-    + 响应的具体逻辑
-    + 将请求路径**映射**到该逻辑上
-3. 编写代码（Write the code）
++ `/albums`的`GET请求`处理器
++ 代码编写顺序
+1. 处理请求的**具体逻辑**
+2. 将请求路径**映射**到该逻辑上
++ 编写代码（Write the code）
+```
+func getAlbums(c *gin.Context) {
+    c.IndentedJSON(http.StatusOK, albums)
+}
+```
+1. `gin.Context`是`Gin`框架**最重要**的部分，它携带了请求的细节，可以完成合理化JSON，序列化Json等等工作，它**不同于**Golang内置的**同名包`context`**
