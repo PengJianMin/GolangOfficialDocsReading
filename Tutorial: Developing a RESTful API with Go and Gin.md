@@ -14,7 +14,7 @@
   go mod init example/web-service-gin
 ```
 # 生产数据（Create the data）
-+ 代码
++ 编写代码（Write the code）
 ```
 package main
 
@@ -38,7 +38,4 @@ var albums = []album{
 2. 代码编写顺序
     + 响应的具体逻辑
     + 将请求路径**映射**到该逻辑上
-3. 代码
-```
-
-```
+3. 编写代码（Write the code）
