@@ -55,7 +55,7 @@ func main() {
 }
 ```
 3. `gin.Default()` 初始化Gin路由（router）
-4. `router.GET`将`/albums`请求和`getAlbums`进行绑定
+4. `router.GET`将`/albums` **GET请求**和`getAlbums`进行绑定
 ```
 package main
 
@@ -65,9 +65,34 @@ import (
     "github.com/gin-gonic/gin"
 )
 ```
-# 运行代码（Run the code）
++ 运行代码（Run the code）
 ```
-	go get .
-	go run . 
-	curl http://localhost:8080/albums
+go get .
+go run . 
+curl http://localhost:8080/albums
+```
+# 编写处理器，增加新album类目（Write a handler to add a new item）
++ 编写代码
+```
+func postAlbums(c *gin.Context){
+	var newAlbum album
+	if err:= c.BindJSON(&newAlbum);err!= nil{
+		return
+	}
+	albums = append(albums,newAlbum)
+	c.IndentedJSON(http.StatusCreated,newAlbum)
+}
+```
+1. ` Context.BindJSON`将**请求体**绑定到`newAlbum`变量
+2. `http.StatusCreated` 为状态码`201`
+```
+router.POST("/albums", postAlbums)
+```
+3. `router.POST`将`/albums` **POST请求**和`postAlbums`进行绑定
++ 运行代码
+```
+go run .
+curl http://localhost:8080/albums --include --header "Content-Type: application/json" --request "POST" --data '{"id": "4","title": "The Modern Sound of Betty Carter","artist": "Betty Carter","price": 49.99}'
+
+curl http://localhost:8080/albums --header "Content-Type: application/json" --request "GET"
 ```
