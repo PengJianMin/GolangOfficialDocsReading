@@ -45,3 +45,29 @@ func getAlbums(c *gin.Context) {
 }
 ```
 1. `gin.Context`是`Gin`框架**最重要**的部分，它携带了请求的细节，可以完成合理化JSON，序列化Json等等工作，它**不同于**Golang内置的**同名包`context`**
+2. ` Context.IndentedJSON`会把struct**序列化**为JSON，并将它添加到响应中
+```
+func main() {
+    router := gin.Default()
+    router.GET("/albums", getAlbums)
+
+    router.Run("localhost:8080")
+}
+```
+3. `gin.Default()` 初始化Gin路由（router）
+4. `router.GET`将`/albums`请求和`getAlbums`进行绑定
+```
+package main
+
+import (
+    "net/http"
+
+    "github.com/gin-gonic/gin"
+)
+```
+# 运行代码（Run the code）
+```
+	go get .
+	go run . 
+	curl http://localhost:8080/albums
+```
